@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    app:cardUseCompatPadding="true"
+    android:layout_height="180dp">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:background="#3B7485"
+       android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95"/>
+
+    <ImageView
+        android:layout_marginTop="12dp"
+        android:id="@+id/img1"
+        android:src="@drawable/ic_baseline_class_24_white"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:layout_constraintStart_toStartOf="@id/guideline2"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <TextView
+        android:textColor="#fff"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="32dp"
+        android:text="erghergrg"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/img1"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:id="@+id/fullName1"
+        android:layout_height="wrap_content"/>
+    <TextView
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/img1"
+        android:layout_marginStart="4dp"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:maxLines="2"
+        android:lines="2"
+        android:layout_marginEnd="12dp"
+        android:paddingEnd="12dp"
+        android:layout_marginTop="18dp"
+        android:id="@+id/description1"
+        android:text="description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+    <LinearLayout
+        android:layout_marginStart="4dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/description1"
+        app:layout_constraintStart_toStartOf="@id/guideline2"
+        android:layout_marginTop="26dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="language11"
+            android:textColor="#fff"
+            android:id="@+id/language1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+
+            app:layout_goneMarginStart="26dp"
+            android:text="Updated on "
+            android:textColor="#fff"
+            android:layout_marginStart="26dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="28 nov"
+            android:textColor="#fff"
+            android:id="@+id/updated_at1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
